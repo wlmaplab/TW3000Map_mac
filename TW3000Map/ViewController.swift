@@ -410,7 +410,8 @@ class ViewController: NSViewController, MKMapViewDelegate, NSSearchFieldDelegate
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(keyword, in: nil, preferredLocale: nil) { placemarks, error in
             if let err = error {
-                print("\(err.localizedDescription)")
+                print("geocoder error: \(err.localizedDescription)")
+                self.showGeocodeErrorAlert(keyword: keyword)
             } else {
                 print("Placemarks: \(placemarks ?? [])")
                 if let placemark = placemarks?[0] {
@@ -467,6 +468,19 @@ class ViewController: NSViewController, MKMapViewDelegate, NSSearchFieldDelegate
             currentSearchPlaceAnnotation = nil
         }
     }
+    
+    func showGeocodeErrorAlert(keyword: String) {
+        let alert = NSAlert()
+        alert.addButton(withTitle: "OK")
+        alert.messageText = "搜尋失敗"
+        alert.informativeText = "搜尋的地址：\(keyword)"
+        alert.alertStyle = .warning
+        
+        alert.beginSheetModal(for: self.view.window!, completionHandler: { modalResponse in
+            print("modalResponse: \(modalResponse)")
+        })
+    }
+    
     
     // MARK: - NSSearchFieldDelegate / NSTextFieldDelegate
     

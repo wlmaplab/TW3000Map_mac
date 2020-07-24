@@ -516,7 +516,7 @@
                                     <constraint firstAttribute="height" constant="300" id="1Ml-9Y-sI9"/>
                                     <constraint firstAttribute="width" constant="75" id="Lwx-rB-Zap"/>
                                 </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="levelBar2_h300" id="bHQ-kl-FQf"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="levelBar3_1_h300" id="bHQ-kl-FQf"/>
                             </imageView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wgs-sS-3rC">
                                 <rect key="frame" x="474" y="1" width="135" height="32"/>
@@ -594,6 +594,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="levelBar2_h300" width="75" height="300"/>
+        <image name="levelBar3_1_h300" width="75" height="300"/>
     </resources>
 </document>

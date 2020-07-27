@@ -7,6 +7,13 @@
 - 可用期限：2020/07/15 ~ 2020/12/31
 
 
+## 下載
+
+- 可以從 [Releases 頁面](https://github.com/wlmaplab/TW3000Map_mac/releases) 下載打包好的執行檔。
+
+
+## 擷圖
+
 ![images](images/img_01.png)
 ![images](images/img_02.png)
 

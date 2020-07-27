@@ -25,8 +25,6 @@
 		425B83C124C2B68500E95FCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B83C024C2B68500E95FCE /* ViewController.swift */; };
 		425B83C324C2B69600E95FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425B83C224C2B69600E95FCE /* Assets.xcassets */; };
 		425B83C624C2B69600E95FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425B83C424C2B69600E95FCE /* Main.storyboard */; };
-		425B83D024C2D6A600E95FCE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425B83CF24C2D6A600E95FCE /* MapKit.framework */; };
-		425B83D224C2D6AE00E95FCE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425B83D124C2D6AE00E95FCE /* CoreLocation.framework */; };
 		425B83D724C2F63D00E95FCE /* post_pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 425B83D424C2F63D00E95FCE /* post_pin@2x.png */; };
 		425B83D824C2F63D00E95FCE /* post_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 425B83D524C2F63D00E95FCE /* post_pin.png */; };
 		425B83DC24C2F69900E95FCE /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B83DB24C2F69900E95FCE /* APIHelper.swift */; };
@@ -66,8 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				425B83D224C2D6AE00E95FCE /* CoreLocation.framework in Frameworks */,
-				425B83D024C2D6A600E95FCE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +374,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TW3000Map/TW3000Map.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = ZQQXZWEJB5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TW3000Map/Info.plist;
@@ -401,10 +397,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TW3000Map/TW3000Map.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = ZQQXZWEJB5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TW3000Map/Info.plist;

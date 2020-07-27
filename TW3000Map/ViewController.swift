@@ -153,17 +153,20 @@ class ViewController: NSViewController, MKMapViewDelegate, NSSearchFieldDelegate
 
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         if let location = userLocation.location {
-            print("緯度:\(location.coordinate.latitude), 經度: \(location.coordinate.longitude)")
-            
-            myLocation.latitude = location.coordinate.latitude
-            myLocation.longitude = location.coordinate.longitude
-
-            if isMoveToUserLocation == true {
-                isMoveToUserLocation = false
-                let viewRegion = MKCoordinateRegion(center: myLocation, latitudinalMeters: 3000, longitudinalMeters: 3000)
-                let adjustedRegion = mapView.regionThatFits(viewRegion)
-                mapView.setRegion(adjustedRegion, animated: true)
-                myLocationButton.title = "我的位置"
+            DispatchQueue.main.async {
+                print("緯度:\(location.coordinate.latitude), 經度: \(location.coordinate.longitude)")
+                self.myLocation.latitude = location.coordinate.latitude
+                self.myLocation.longitude = location.coordinate.longitude
+                
+                if self.isMoveToUserLocation == true {
+                    self.isMoveToUserLocation = false
+                    let viewRegion = MKCoordinateRegion(center: self.myLocation,
+                                                        latitudinalMeters: 3000,
+                                                        longitudinalMeters: 3000)
+                    let adjustedRegion = mapView.regionThatFits(viewRegion)
+                    mapView.setRegion(adjustedRegion, animated: true)
+                    self.myLocationButton.title = "我的位置"
+                }
             }
         }
     }
